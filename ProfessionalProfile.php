@@ -90,3 +90,5 @@ while($row_comp=mysql_fetch_assoc($comps))
 	echo '</ul>';
 }
 ?>
+<hr/>
+<em>This page was generated using customized WordPress/MySql/PHP (<a href="https://github.com/DanielLewisRandall/danielrandall.org/blob/master/ProfessionalProfile.php">source on GitHub</a>)</em> 
