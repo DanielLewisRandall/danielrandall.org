@@ -28,8 +28,18 @@ while($row_spec=mysql_fetch_assoc($specs))
 }
 echo '</ul>';
 ?>
+<h2>Languages</h2>
+<?php
+$query_spec  = "SELECT * FROM pp_languages WHERE user_id='1'";
+$specs = mysql_query($query_spec);
+echo '<ul>';
+while($row_spec=mysql_fetch_assoc($specs))
+{
+	echo '<li>'.$row_spec["name"].'</li>';
+}
+echo '</ul>';
+?>
 <h2>Portfolio</h2>
-
 <?php
 $query_comp  = "SELECT * FROM pp_companies WHERE user_id='1' AND summary IS NOT NULL ORDER BY sequence DESC";
 $comps = mysql_query($query_comp);
